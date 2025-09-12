@@ -91,11 +91,18 @@ input:checked + .slider::before {
 }
 
 .dark-mode h2 {
+  background-color: #222;
   color:#fff;
 }
 
 .dark-mode p {
+  background-color: #222;
   color:#fff;
+}
+
+.dark-mode section {
+  background-color: #222;
+  color: white;
 }
 
 
