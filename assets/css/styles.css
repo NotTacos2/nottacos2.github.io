@@ -23,7 +23,7 @@
   --navbar-height: 56px; /* used across sections */
 
   /* Typography / Rendering */
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-family: "Share Tech", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color: var(--dark-font);
