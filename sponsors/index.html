@@ -1,0 +1,95 @@
+
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet" />
+    <title>Sponsors</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/sponsors.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&amp;display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="root">
+
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="navbar-logo">
+                    <a href="../index.html" data-discover="true">Trivium Knightmares</a>
+                </div>
+                <div class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="navbar-menu">
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="../index.html" data-discover="true">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="../sponsors/index.html" data-discover="true">Sponsors</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- /navbar -->
+
+
+        <section class="dark-section">
+            <div class="section-container">
+                <h2 class="section-title">Sponsors</h2>
+                <div class="sponsor-tier">
+                    <h3 class="sponsors-title sponsors-title-ultimate">Ultimate Knight</h3>
+                </div>
+                <div class="sponsor-tier">
+                    <h3 class="sponsors-title sponsors-title-diamond">Diamond Knight</h3>
+                </div>
+                <div class="sponsor-tier">
+                    <h3 class="sponsors-title sponsors-title-gold">Gold Knight</h3>
+                </div>
+                <div class="sponsor-tier">
+                    <h3 class="sponsors-title sponsors-title-silver">Silver Knight</h3>
+                </div>
+                <div class="sponsor-tier">
+                    <h3 class="sponsors-title sponsors-title-bronze">Bronze Knight</h3>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="footer">
+            <div class="footer-bottom">
+                <p>&#169; 2026 Trivium Knightmares. All rights reserved.</p>
+            </div>
+        </footer>
+
+
+    </div>
+    <!-- /root -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const hamburger = document.querySelector(".hamburger-menu");
+            const navbarMenu = document.querySelector(".navbar-menu");
+
+            hamburger.addEventListener("click", () => {
+                hamburger.classList.toggle("active");
+                navbarMenu.classList.toggle("active");
+            });
+
+            document.querySelectorAll(".navbar-menu a").forEach((link) => {
+                link.addEventListener("click", () => {
+                    hamburger.classList.remove("active");
+                    navbarMenu.classList.remove("active");
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
