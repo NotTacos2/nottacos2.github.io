@@ -163,6 +163,11 @@ button:focus-visible {
   color: #646cff;
 }
 
+.nav-icon {
+  width: 30px;
+  height: 30px;
+}
+
 /* Hamburger */
 .hamburger-menu {
   display: none;
